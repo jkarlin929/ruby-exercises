@@ -13,3 +13,5 @@
     -
 * What is a merge conflict?
     - Merge conflict occurs when pulling branches and the content doesn't operate with the file. Merging is the act of integrating another branch into your current working branch.
+
+Can you see this comment, Glenna?
