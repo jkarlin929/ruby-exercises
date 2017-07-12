@@ -1,0 +1,24 @@
+#contact-info p{
+  font-size: .8em;
+}
+
+.job {
+  background-color: #e9e5dc;
+  border-radius: 25px;
+  padding-top:3px;
+  padding-bottom:3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.small-text {
+  font-size: .8em;
+}
+
+p:hover {
+  text-decoration: underline;
+}
+
+.hula-color {
+  color:purple;
+}
