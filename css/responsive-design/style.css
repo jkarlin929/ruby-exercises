@@ -12,13 +12,28 @@ cite {
 #external-links ul {
   list-style-type: none;
   padding-left: 0px;
+  width: 200%;
+  display: fixed;
+  float: left;
+  vertical-align: baseline;
+}
+
+#main{
+  min-width: 75%;
+  float: right;
+  padding-left: 120px;
+  padding-right: 60px;
 }
 
 /* you're welcome to edit the
-image, figure, and figcaption CSS if you'd like, 
+image, figure, and figcaption CSS if you'd like,
 but it's optional! */
 img {
   width: 100%;
+}
+
+body{
+  max-width: 960px;
 }
 
 figure {
@@ -29,4 +44,28 @@ figure {
 figcaption {
   font-style: italic;
   text-align: right;
+}
+@media screen and (max-width: 500px) {
+  #flowers2 {
+    z-index: -1;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 500px) {
+ #flowers {
+    position: absolute;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 12px;
+  }
+}
+/*@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+*/
 }
