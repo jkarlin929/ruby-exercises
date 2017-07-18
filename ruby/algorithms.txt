@@ -15,3 +15,19 @@ You are on the ground floor and need to get the 34th floor of the 35 floor build
         -Get out of elevator
     In case of fire:
         -Use stairs (sorry about the 34 flights, Robot)
+
+
+Brushing Teeth Task:
+You are in the bathroom of your home and need to brush your teeth for two minutes.
+    -open and retrieve toothbrush from cabinet
+    -turn on sink
+    -add toothbrush under the running water
+    -open retrieve toothpaste from cabinet
+    -open toothpaste cap
+    -apply toothpaste to wet toothbrush 
+    -put toothbrush parallel to teeth
+    -brush back and forth for 120 seconds
+    -remove toothbrush from mouth
+    -spit out excess liquid
+    -rinse mouth out with water
+    -dry mouth with towel
