@@ -1,0 +1,17 @@
+Robot Elevator Algorithm:
+You are on the ground floor and need to get the 34th floor of the 35 floor building.
+    On the ground floor, the Elevator is given two options up or down:
+        -Press the up button to go up
+        -Press the down button to go down
+    When the doors open:
+        -Check to see if elevator is going up or down
+    If elevator is going up:
+        -Press button 34  
+        -Wait until the elevator displays floor 34
+    If elevator is going down:
+        -remain still
+    If other passengers are present when entering elevator:
+        -Wait until floor is equal to 34
+        -Get out of elevator
+    In case of fire:
+        -Use stairs (sorry about the 34 flights, Robot)
