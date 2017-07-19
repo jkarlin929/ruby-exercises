@@ -1,8 +1,8 @@
 puts "What's your hamsters name?"
 hamster_name = gets.chomp
 
-puts "On a scale of 1 to 10, how loud is #{hamster_name}"
-volume_level = gets.to_i
+puts "On a scale of 1.5 to 10.5, how loud is #{hamster_name}"
+volume_level = gets.to_f
 
 puts "What is the fur color?"
 fur_color = gets.chomp
@@ -17,5 +17,15 @@ else
 end
 
 age = nil
-puts "How old is the hamster?"
+  puts "How old is the hamster?"
 age = gets.to_i
+
+
+if adoption == true
+  puts "#{hamster_name} is #{fur_color} on scale of 1.5 to 10.5 is a #{volume_level} in volume level. The age of #{hamster_name} is #{age} and is eligible for adoption."
+else
+  adoption == false
+    puts "#{hamster_name} is #{fur_color} on scale of 1.5 to 10.5 is a #{volume_level} in volume level. The age of #{hamster_name} is #{age} and is not eligible for adoption."
+end
+
+
