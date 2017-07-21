@@ -13,6 +13,16 @@ gets.chomp
 insurance = #{gets.chomp}
 
 if
-  year_born > 1900 || (bread_choice == true || insurance == true)
-    puts "Probably not a vampire"
+  year_born > 1900 || (bread_choice == true && insurance == true)
+      puts "Probably not a vampire."
+elsif
+  year_born < 1900 || (bread_choice == false || insurance == false)
+      puts "Probably a vampire."
+elsif
+  year_born < 1900 && (bread_choice == false && insurance == false)
+      puts "Almost certainly a vampire."
+
+
+
 end
+
