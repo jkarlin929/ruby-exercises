@@ -10,12 +10,13 @@ bread_choice = gets.chomp
 puts "Would you like to enroll in health insurance, true or false"
 insurance = gets.chomp
 
-if
-  year_born > 1900
+if name == "Drake Cula" || name == "Tu Fang"
+    puts "Definitely a vampire"
+  elsif year_born > 1900
     puts "Probably not a vampire"
   elsif bread_choice == "true" || insurance == "true"
     puts "Probably a vampire"
-  elsif bread_choice == "false" && insurance == "false"
+  elsif year_born < 1900 && (bread_choice == "false" && insurance == "false")
     puts "Almost certainly a vampire"
   else
     puts "Results inconclusive"
