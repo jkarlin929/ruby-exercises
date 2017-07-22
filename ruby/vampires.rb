@@ -1,3 +1,6 @@
+puts "How many employees are applying?"
+employees = gets.to_i
+
 puts "What is your name?"
 name = gets.chomp
 
@@ -10,6 +13,11 @@ bread_choice = gets.chomp
 puts "Would you like to enroll in health insurance, true or false"
 insurance = gets.chomp
 
+
+while employees == #{gets.chomp}
+
+employees += 1
+
 if name == "Drake Cula" || name == "Tu Fang"
     puts "Definitely a vampire"
   elsif year_born > 1900
@@ -20,4 +28,6 @@ if name == "Drake Cula" || name == "Tu Fang"
     puts "Almost certainly a vampire"
   else
     puts "Results inconclusive"
+end
+
 end
