@@ -1,3 +1,19 @@
 *{
-  background-color: yellow;
+  font-family: Georgia;
+  color: red;
+}
+
+body{
+  background-image: url("https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png");
+  background-size: 180px 160px;
+  background-color: black;
+}
+.column-1, .column-2{
+  background-color: snow;
+}
+
+section {
+  display: inline-block;
+  width: 600px;
+  vertical-align: top;
 }
