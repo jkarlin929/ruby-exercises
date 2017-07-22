@@ -1,15 +1,16 @@
 allergy = "done"
+allergy = ""
 
- while allergy
+ while allergy != "done"
   puts "What are you allergic to?"
   allergy = gets.chomp
 
-   if allergy == "sunshine"
+  if allergy == "sunshine"
     puts "Probably a vampire"
-    else
-     allergy != "sunshine"
+  else
+    allergy != "sunshine"
   end
-
+end
 
 puts "How many employees are applying?"
 employees = gets.to_i
@@ -27,7 +28,7 @@ bread_choice = gets.chomp
 puts "Would you like to enroll in health insurance, true or false"
 insurance = gets.chomp
 employees -= 1
-end
+
   if name == "Drake Cula" || name == "Tu Fang"
     puts "Definitely a vampire"
   elsif year_born > 1900
@@ -40,5 +41,4 @@ end
     puts "Results inconclusive"
 end
 end
-
 puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
