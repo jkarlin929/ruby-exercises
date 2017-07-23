@@ -1,32 +1,32 @@
-allergy = "done"
+puts "How many employees are applying?"
+  employees = gets.to_i
+until employees == 0
+
 allergy = ""
 
  while allergy != "done"
-  puts "What are you allergic to?"
-  allergy = gets.chomp
+    puts "What are you allergic to? (enter done when finished)"
+      allergy = gets.chomp
 
   if allergy == "sunshine"
     puts "Probably a vampire"
   else
-    allergy != "sunshine"
+   allergy != "sunshine"
   end
 end
 
-puts "How many employees are applying?"
-employees = gets.to_i
-until employees == 0
-
 puts "What is your name?"
-name = gets.chomp
+  name = gets.chomp
 
 puts "What year were you born?"
-year_born = gets.to_i
+  year_born = gets.to_i
 
 puts "Do you like garlic bread, true or false?"
-bread_choice = gets.chomp
+  bread_choice = gets.chomp
 
 puts "Would you like to enroll in health insurance, true or false"
-insurance = gets.chomp
+  insurance = gets.chomp
+
 employees -= 1
 
   if name == "Drake Cula" || name == "Tu Fang"
@@ -41,4 +41,5 @@ employees -= 1
     puts "Results inconclusive"
 end
 end
+
 puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
