@@ -90,9 +90,10 @@ Shopping_mall = {
                   ]
   }
 }
-#p Shopping_mall[:Bank][:manager_name]
-#p Shopping_mall[:Clothing_store_1][:employee_names][2]
-#p Shopping_mall[:Sporting_goods][:goods][0]
+p Shopping_mall[:Bank][:manager_name]
+p Shopping_mall[:Clothing_store_1][:employee_names][0, 2]
+p Shopping_mall[:Sporting_goods][:goods][0]
 p Shopping_mall[:Tech_store][:goods][3]
-p Shopping_mall[:Food_court][:Food_court_restaurants].reverse
 p Shopping_mall[:Food_court][:employee_names][2]
+p Shopping_mall[:Food_court][:Food_court_restaurants][2]
+p Shopping_mall[:Food_court][:Food_court_restaurants][4]
