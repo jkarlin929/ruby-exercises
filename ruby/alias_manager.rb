@@ -33,7 +33,15 @@ letters = {
       "x",
       "y",
       "z"
- ]
+ ],
+      new_vowels:[
+      "e",
+      "i",
+      "o",
+      "u",
+      "a"
+      ]
+
 }
 #swap first and last name and lowercase the letters.
 #separate each letter by character.
