@@ -78,17 +78,18 @@ p average_temp.delete_if {|month, temp| temp >= "75"}
 
 #keeping the above value from updated numbers array/hash
 
-p numbers.keep_if { |a| a < "5" }
+p numbers.keep_if { |x| x < "5" }
 p average_temp.keep_if {|month, temp| temp < "60"}
 
 
 # selecting objects from the modified array/hash
 
-p numbers.select! { |number| number > "3" }
+p numbers.select! { |x| x > "3" }
 
 p average_temp.select! {|month, temp| month == :February}
 
 
 #remove items until block is false
 
-
+p numbers.drop_while {|x| x >= "4"}
+p average_temp.reject {|month, temp| temp > "30"}
