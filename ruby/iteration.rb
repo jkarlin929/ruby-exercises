@@ -91,3 +91,4 @@ p average_temp.select! {|month, temp| month == :February}
 
 #remove items until block is false
 
+
