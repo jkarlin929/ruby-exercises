@@ -69,8 +69,8 @@ average_temp = {
 
 #deleting from an array/hash
 p "MODIFIED:"
-p numbers.delete_if {|x| x < "3" }
 
+p numbers.delete_if {|x| x < "3" }
 p average_temp.delete_if {|month, temp| temp >= "75"}
 
 
