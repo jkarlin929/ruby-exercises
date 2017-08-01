@@ -62,6 +62,7 @@ arr2 = consanants.rotate
 p arr1
 p arr2
 
+#let user enter name and get fake name back. let them do this over and over until they type quit to enter.
 loop_boolean = false
 
 until loop_boolean
@@ -75,5 +76,7 @@ else
 end
 end
 
+#store the name in a data structure, this case, a hash, and provide an exit message
+#these next two lines should probably be inside the loop?
 stored_names = {}
 stored_names.each {|key, value| puts "#{key} is actually #{value}."}
