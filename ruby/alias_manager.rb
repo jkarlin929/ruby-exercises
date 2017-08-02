@@ -5,16 +5,24 @@ puts "What is your first and last name?"
 name = gets.chomp
 p name
 
-#swap first and last name and lowercase the letters.
-#separate each letter by character.
-name2 = name.downcase.split.reverse #str xfer to array
-p name2
-
 #create an array of vowels and an array of consanants
 vowels = ["a", "e", "i", "o", "u"]
 consanants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"]
+new_letter = []
+
+#swap first and last name and lowercase the letters.
+#separate each letter by character.
+name2 = name.downcase.split('').reverse #str xfer to array
+p name2
+
+name2.each do |letter|
+      p new_letter << letter.next
+end
 
 # handle edge cases for vowels
+
+x = []
+
 def vowel(x)
       if x == "u"
       puts "a"
@@ -44,23 +52,16 @@ end
 #p letters[:vowels]
 #change the consanants to the following consanants, excluding any vowels. Remember to handle edge cases.
 
-x = []
-
 last_name = name2[0].chars
 first_name = name2[1].chars
 
-p last_name.each {|x| p x }
+p last_name.each {|x| p last_name }
 
-p first_name.each {|x| p x }
+p first_name.each {|x| p first_name }
+
 
 p last_name.join
 p first_name.join
-
-arr1 = vowels.rotate
-arr2 = consanants.rotate
-
-p arr1
-p arr2
 
 #let user enter name and get fake name back. let them do this over and over until they type quit to enter.
 loop_boolean = false
