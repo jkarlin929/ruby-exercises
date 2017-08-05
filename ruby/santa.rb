@@ -1,7 +1,9 @@
+#Initialize SANTA CLASS
 class Santa
+#set attributes
   attr_reader :ethnicity, :age
   attr_accessor :gender
-
+#define instance methods
   def initialize(gender, ethnicity)
    @gender = gender
   p "Initializing Santa instance ..."
