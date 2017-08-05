@@ -63,7 +63,7 @@ until santas > 10
 puts "New Santa data:"
 p example_genders.sample
 p example_ethnicities.sample
-p age("").rand(0...140)
+#p age("").rand(0...140)
 santas += 1
 
 end
