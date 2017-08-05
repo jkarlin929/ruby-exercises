@@ -1,3 +1,7 @@
+#to do list should store list items given on initialization
+
+require_relative 'TodoList'
+
 describe TodoList do
   let(:list) { TodoList.new(["do the dishes", "mow the lawn"]) }
 
