@@ -1,4 +1,5 @@
 class TodoList
+
   def initialize(list)
     @list = list
   end
@@ -17,5 +18,7 @@ class TodoList
 
   def get_item(n)
     @list.index(n)
+    new_arr = []
+    new_arr << @list[0]
   end
 end
