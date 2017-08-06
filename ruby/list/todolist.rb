@@ -18,7 +18,7 @@ class TodoList
 
   def get_item(n)
     @list.index(n)
-    new_arr = []
-    new_arr << @list[0]
+    new_str = ""
+    new_str << @list[0]
   end
 end
