@@ -1,15 +1,21 @@
 class TodoList
+  def initialize(list)
+    @list = list
+  end
 
-def initialize(list)
-  @list = list
-end
+  def get_items
+    @list
+  end
 
-def get_items
-  @list
-end
+  def add_item(str)
+    @list.push(str)
+  end
 
-# def add_item(str)
-#   list = list.push(str)
-# end
+  def delete_item(str)
+    @list.delete(str)
+  end
 
+  def get_item(n)
+    @list.index(n)
+  end
 end
