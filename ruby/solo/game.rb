@@ -1,17 +1,16 @@
 #Create a Word Guessing Game using class
-#The program should ask for a word
-#Begin to guess the word entered
-#The number of guesses is equal to the length of the word entered
 #The user can repeat the letter they entered
 #Print the correct letter in its place when the user guesses it
 #Enter a 'you win' or 'you lose' message at the end
 
+#Initialize class and instance variables
 class Word_Game
   def initialize(word)
     @word = word.downcase
     @input_word = "_" * word.length
   end
 
+#Guesses of the word
   def guess_letter(a_letter)
     p a_letter.downcase
     @word.split("").each_with_index do |another_letter, index|
@@ -31,7 +30,6 @@ class Word_Game
       puts "Congrats! You are a winner!"
       true
     else
-      puts "Out of turns.You lose."
       false
     end
   end
@@ -39,6 +37,7 @@ end
 
 
 #Driver code
+#The program should ask for a word
 puts "Welcome to Jason's word guessing game!"
 puts "This game is for 2 players."
 puts "Player 1, please enter a word for player 2 to guess..."
@@ -50,11 +49,10 @@ attempts = 0
 guessed_letters = []
 
 until attempts == game_word.length + 1
-  puts "Please guess a letter, player 2"
-    letter_guess = gets.chomp
-      guessed_letters << letter_guess
+  puts "Please guess a letter"
+  letter_guess = gets.chomp
+    guessed_letters << letter_guess
     game.guess_letter(letter_guess)
     game.win
-    game.lose
     attempts += 1
 end
