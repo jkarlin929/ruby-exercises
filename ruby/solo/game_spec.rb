@@ -4,10 +4,10 @@
     # expect(<YOUR CODE>).to eq <RESULT>
 
 
-  require_relative 'game'
+require_relative 'game'
 
 describe Word_Game do
-  let(:game) {Word_Game.new}
+  let(:game) { Word_Game.new(game_word) }
 end
 
 # it "stores the word and word length on initialization" do
@@ -18,7 +18,7 @@ end
 # end
 
 it "tells you you're a winner" do
-  expect(game.win) to eq @word
+  expect(game.win).to eq ("Congrats! You are a winner!")
 end
 
 #I was unable to complete this
