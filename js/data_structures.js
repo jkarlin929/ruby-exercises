@@ -22,3 +22,30 @@ console.log (horse_info);
 
 
 //release 2
+
+
+
+function Car(type, color, seatNumber) {
+
+this.type = type;
+this.color = color;
+this.seatNumber = seatNumber;
+this.honk = function() {console.log("Honk!");};
+
+
+}
+
+var myCar = new Car("Tesla", "White", 4);
+console.log("My car:");
+console.log(myCar);
+myCar.honk();
+
+var anotherCar = new Car("Ford", "Blue", 6);
+console.log("Another Car:");
+console.log(anotherCar);
+anotherCar.honk();
+
+var thirdCar = new Car("Volkswagen", "Red", 2);
+console.log("Weekend Car:");
+console.log(thirdCar);
+thirdCar.honk();
