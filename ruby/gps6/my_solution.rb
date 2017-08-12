@@ -1,12 +1,14 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself.
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
 #
 #
 require_relative 'state_data'
+#Release 1
+#require relative links the state data file with this #file. It allows the state_date file to loaded into the #class design. Require relative and require differ in #that require uses the current directory that you are #running the program from and require_relative uses the #directory of where that program itself resides
 
 class VirusPredictor
 
