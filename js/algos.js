@@ -52,3 +52,19 @@ console.log(compareObject(object1, object2));
 //Write a function that takes an integer for length, and builds and returns an array of strings of the given length.
 
 function length(x)
+
+Input: An integer (representing the length of the resulting array)
+Output: An array of integer length
+- create an array to hold the random words
+- iterate integer number of times
+ - generate a random word with 1 - 10 characters
+ - figure out how long the word is going to be (by generating a random number between 1 and 10)
+ - create an empty string to hold the word
+ - iterate that number of times
+  - extract a random letter from the alphabet (this will involve a bit of logic of its own)
+  [- set up a string variable with all the letters in the alphabet
+  - generate a random number between 0 and 25
+  - grab the letter at that position in the alphabet]
+  - add that letter to the string
+ - add the word to the array
+- return the resulting array
