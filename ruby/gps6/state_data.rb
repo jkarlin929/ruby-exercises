@@ -55,6 +55,3 @@ STATE_DATA = {
   "Wisconsin" => {population_density: 105.2, population: 5726398},
   "Wyoming" => {population_density: 5.851, population: 576412}
 }
-
-#Release 2
-#This hash is taking each state
