@@ -9,6 +9,7 @@
 require_relative 'state_data'
 
 class VirusPredictor
+  attr_reader :population_density, :population, :state
 #The method below initializes our instance variables.
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
@@ -17,8 +18,8 @@ class VirusPredictor
   end
 #The method below prints the other two methods with their #instance variables as their parameters.
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths
+    speed_of_spread
   end
 
   private
@@ -81,10 +82,12 @@ california.virus_effects
 
 alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
 alaska.virus_effects
-#I know that release 4 is not supposed to look like this. I #can't quite grasp how to do this without someone else, OR #if I had some more time. I would think I would have to #include the instance variables and make them accessible #outside the class.
-all_states = STATE_DATA.each do |key, value|
+
+#Release 4
+STATE_DATA.each do |state, value|
+  all_states = VirusPredictor.new(state, STATE_DATA[state][:population_density], STATE_DATA[state][:population])
+  all_states.virus_effects
 end
-puts all_states
 
 #=======================================================================
 # Reflection Section
@@ -104,14 +107,14 @@ puts all_states
 #See end of DRIVER CODE
 
 #Release 5
-#I don't know.
+#Take out the parameters inside of the method and use #attr_reader on top
 
 #Release 6
 #Private, when moved causes an error and cannot read the
 #driver code. When Private is used the method cannot be called outside the class scope. Private means the method is #important to the object's internal implementation, but they are not the concern of the outside world.
 
 #Release 7
-#I don't know.
+#I think you can refactor the data by using integers #instead of what the instance variable is equal to.
 
 #Release 8
 #The differences between the two different hash syntaxes #shown in the state_data file are that they use both the #'=>' and the ':' symbols.
