@@ -44,11 +44,43 @@ var object2 = {name: 'Fido',  age: 5};
 
 console.log(compareObject(object1, object2));
 
-//I definetely felt like if I had more time I could get this right. Right now it doesn't. I just really need to study more for practice assessment.
+//I can't figure out why this is undefined
 
 
 //Release 2
 
 //Write a function that takes an integer for length, and builds and returns an array of strings of the given length.
 
-function length(x)
+function length(x) {
+  var stringLength = "x".length;
+  var array = [];
+  var randomWord = math.random("hello");
+  var randomNumber = math.random("1...10");
+  var randomWord = " ";
+  var alphabet = "abcdefghijklmnopqrstuvwxyz";
+  var anotherRandomNumber = math.random("0...25");
+  var indexedLetter = alphabet[anotherRandomNumber];
+  var randomWord = var indexedLetter.join;
+
+
+}
+
+console.log(length(3));
+
+
+
+// Input: An integer (representing the length of the resulting array)
+// Output: An array of integer length
+// - create an array to hold the random words
+// - iterate integer number of times?
+//  - generate a random word with 1 - 10 characters
+//  - figure out how long the word is going to be (by generating a random number between 1 and 10)
+//  - create an empty string to hold the word
+//  - iterate that number of times
+//   - extract a random letter from the alphabet (this will involve a bit of logic of its own)
+//   [- set up a string variable with all the letters in the alphabet
+//   - generate a random number between 0 and 25
+//   - grab the letter at that position in the alphabet]
+//   - add that letter to the string
+//  - add the word to the array
+// - return the resulting array
