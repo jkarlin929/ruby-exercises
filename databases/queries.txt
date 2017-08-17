@@ -1,0 +1,18 @@
+
+
+-To join three tables, we entered:
+SELECT business_id, user_id FROM reviews r JOIN businesses b ON r.business_id = b.id JOIN users u ON r.user_id = u.id;
+Which returned:
+1|3
+2|2
+3|1
+Which represents our relevant data.
+
+
+-To view the user’s name, business name, star rating and the comment we entered: 
+SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment FROM businesses, users, reviews;
+
+-To view the data for one particular business we put in this: 
+SELECT * FROM businesses, users, reviews WHERE businesses.name = "Best Buy";
+
+.name allows to search for the name of the business.
