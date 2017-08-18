@@ -11,7 +11,7 @@ def search_array(array, input_number)
  end
  index_number
 end
-p search_array(array, 4)
+p search_array(array, 9)
 
 #Release 1
 
