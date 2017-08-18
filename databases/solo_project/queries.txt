@@ -1,0 +1,79 @@
+RELEASE 2
+
+1. Display the information in one table (either table is fine).
+
+sqlite> SELECT * FROM employees;
+1|Todd|25|Caucasian|
+2|Frank|39|African American|
+3|Leslie|51|Japanese|
+4|Bob|30|Polynesian|
+
+2. Update an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> UPDATE employees SET age=40 WHERE name="Frank";
+sqlite> SELECT * FROM employees;
+1|Todd|25|Caucasian|
+2|Frank|40|African American|
+3|Leslie|51|Japanese|
+4|Bob|30|Polynesian|
+
+3. Display the information in both tables using one query.
+
+sqlite> SELECT * FROM employees, companies;
+1|Todd|25|Caucasian||1|Apple|California|true
+1|Todd|25|Caucasian||2|Samsung|South Korea|true
+2|Frank|40|African American||1|Apple|California|true
+2|Frank|40|African American||2|Samsung|South Korea|true
+3|Leslie|51|Japanese||1|Apple|California|true
+3|Leslie|51|Japanese||2|Samsung|South Korea|true
+4|Bob|30|Polynesian||1|Apple|California|true
+4|Bob|30|Polynesian||2|Samsung|South Korea|true
+
+
+
+4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+sqlite> SELECT employees.name, employees.age, companies.name FROM employees CROSS JOIN companies;
+Todd|25|Apple
+Todd|25|Samsung
+Frank|40|Apple
+Frank|40|Samsung
+Leslie|51|Apple
+Leslie|51|Samsung
+Bob|30|Apple
+Bob|30|Samsung
+
+
+
+5. Delete an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> DELETE FROM employees WHERE name="Leslie";
+sqlite> SELECT * FROM employees;
+1|Todd|25|Caucasian|
+2|Frank|40|African American|
+4|Bob|30|Polynesian|
+
+
+RELEASE 3
+
+There are lots of different kinds of joins. What are they? Can you apply different conditions to a join to change what's displayed? Can you bookmark any good diagrams that will help you tell different joins apart in the future?
+
+-There is INNER JOIN, OUTER JOIN, LEFT JOIN, RIGHT JOIN, CROSS JOIN, FULL OUTER JOIN. I found a cheatsheet for SQL commands, among others.
+
+sqlite> SELECT employees.name, employees.ethnicity FROM employees INNER JOIN companies ON location="South Korea";
+Todd|Caucasian
+Frank|African American
+Bob|Polynesian
+
+sqlite> SELECT companies.location, companies.equal_oppurtunity_employer FROM companies LEFT JOIN employees ON employees.name="Bob";
+California|true
+South Korea|true
+
+
+sqlite> SELECT * FROM employees CROSS JOIN companies;
+1|Todd|25|Caucasian||1|Apple|California|true
+1|Todd|25|Caucasian||2|Samsung|South Korea|true
+2|Frank|40|African American||1|Apple|California|true
+2|Frank|40|African American||2|Samsung|South Korea|true
+4|Bob|30|Polynesian||1|Apple|California|true
+4|Bob|30|Polynesian||2|Samsung|South Korea|true
