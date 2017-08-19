@@ -10,7 +10,7 @@ db = SQLite3::Database.new("regimen.db")
 #make a command
 #this is a string
 create_table_cmd = <<-SQL
-  CREATE TABLE regimen(
+  CREATE TABLE IF NOT EXISTS regimen(
     id INTEGER PRIMARY KEY,
     name VARCHAR(255),
     age INT,
