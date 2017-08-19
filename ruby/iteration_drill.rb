@@ -86,9 +86,24 @@ extinct_animals.each {|animal, year| puts year - 3}
 # Driver code example: is_extinct?(extinct_animals, "Andean Cat")
 p "----------------------------"
 
-p extinct_animals.has_key?("Andean Cat")
-p extinct_animals.has_key?("Dodo")
-p extinct_animals.has_key?("Saiga Antelope")
+
+def is_extinct(hash, a)
+  extinct = false
+  hash.each do |animal, year|
+    if a == animal
+    extinct = true
+  end
+
+end
+extinct
+end
+
+
+p is_extinct(extinct_animals, "Andean Cat")
+
+# p extinct_animals.has_key?("Andean Cat")
+# p extinct_animals.has_key?("Dodo")
+# p extinct_animals.has_key?("Saiga Antelope")
 
 # 5. We just found out that the Passenger Pigeon is actually not extinct!
 # Remove them from extinct_animals and return the key value pair as a two item array.
