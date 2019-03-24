@@ -8,7 +8,6 @@ var fishArray = ["Cod", "Tuna", "Salmon", "Swordfish"];
 console.log(fishArray);
 
 var longest = 0;
-var array = [];
 //loop through the array to find the longest word by how many letters each string contains
 
 for (var i = 0; i < fishArray.length; i++) {
